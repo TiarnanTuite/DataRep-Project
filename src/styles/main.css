@@ -10,7 +10,7 @@
 :root{
     --maincColor: #29335C;
     --mainColorLight: #68739e;
-    --secondaryCOlor: #DB2B39;
+    --secondaryCOlor: #9b103a;
     --textColor: #eee;
 }
 
@@ -22,6 +22,17 @@ header{
     padding: 0 2rem;
     background-color: var(--maincColor);
     color: var(--textColor);
+}
+
+body{
+    background-color: #68739e;
+    color: #eee;
+}
+
+div{
+    justify-content: space-between;
+    height: 80px;
+    text-align: center;
 }
 
 nav a{
