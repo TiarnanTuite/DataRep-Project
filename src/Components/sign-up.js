@@ -18,7 +18,7 @@ export class Signup extends Component {
   handleSubmit(e) {
     e.preventDefault();
     const { fname, lname, email, password } = this.state;
-    //console.log(fname, lname, email, password);
+    console.log(fname, lname, email, password);
 
     //using fetch get the /register api from the server and post the variables in json format
     fetch("http://localhost:5000/register", {
@@ -31,8 +31,8 @@ export class Signup extends Component {
       },
       body: JSON.stringify({
         fname,
-        email,
         lname,
+        email,
         password,
       }),
     })
@@ -54,7 +54,7 @@ export class Signup extends Component {
           <input type="text" 
           className="form-control" 
           placeholder="     First name" 
-          onChange={e=>this.setState({fname:e.target.value})}/>
+          onChange={(e)=>this.setState({fname:e.target.value})}/>
         </div>
 
         <div className="form">
@@ -62,7 +62,7 @@ export class Signup extends Component {
           <input type="text" 
           className="form-control" 
           placeholder="     Last name" 
-          onChange={e=>this.setState({lname:e.target.value})}/>
+          onChange={(e)=>this.setState({lname:e.target.value})}/>
         </div>
 
         <div className="form">
@@ -70,7 +70,7 @@ export class Signup extends Component {
           <input type="email" 
           className="form-control" 
           placeholder="     Enter email" 
-          onChange={e=>this.setState({email:e.target.value})}/>
+          onChange={(e)=>this.setState({email:e.target.value})}/>
         </div>
 
         <div className="form">
@@ -78,7 +78,7 @@ export class Signup extends Component {
           <input type="password" 
           className="form-control" 
           placeholder="     Enter password" 
-          onChange={e=>this.setState({password:e.target.value})}/>
+          onChange={(e)=>this.setState({password:e.target.value})}/>
         </div>
 
         <div className="buttonCss">
