@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "../styles/main.css"
 
 export class Login extends Component {
   //variables for input to be saved into
@@ -37,10 +38,13 @@ export class Login extends Component {
         console.log(data, "userLogin");
 
         if(data.status === "ok"){
-          alert("Log In successful");
+          alert("Log In Successful");
           //store locally so can be used in other files
           window.localStorage.setItem("token", data.data);
           window.location.href="./";
+        }
+        else{
+          alert("Invalid user. Please try again.");
         }
       });
   }
@@ -79,7 +83,7 @@ export class Login extends Component {
             Submit
           </button>
         </div>
-        <p className="forgot-password text-right">
+        <p>
           Not a member? <a href="/sign-up">Sign up!</a>
         </p>
       </form>

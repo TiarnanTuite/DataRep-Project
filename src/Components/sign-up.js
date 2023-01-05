@@ -40,6 +40,13 @@ export class Signup extends Component {
       .then((data) => {
         //verify in console
         console.log(data, "userRegistered");
+
+        if(data.status === "ok"){
+          alert("Sign up successful");
+        }
+        else{
+          alert("There is already a user with these details. Try logging in.");
+        }
       });
   }
 
@@ -86,7 +93,7 @@ export class Signup extends Component {
             Sign Up
           </button>
         </div>
-        <p className="forgot-password text-right">
+        <p>
           Already registered <a href="/log-in">Log in?</a>
         </p>
       </form>

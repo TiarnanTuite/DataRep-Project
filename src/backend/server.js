@@ -43,6 +43,7 @@ app.post("/register", async (req, res) => {
     //if user already exists give back error
     const oldUser = await User.findOne({email});
     if(oldUser){
+
         return res.json({error: "User Exists" });
     }
 
@@ -68,6 +69,7 @@ app.post("/login", async (req,res)=>{
     const user = await User.findOne({email});
 
     if(!user){
+
         return res.json({error: "User not found" });
     }
 

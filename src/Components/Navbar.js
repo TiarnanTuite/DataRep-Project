@@ -1,4 +1,5 @@
 import { useRef } from "react";
+//menu and close menu icons
 import {FaBars, FaTimes} from "react-icons/fa";
 import "../styles/main.css"
 
