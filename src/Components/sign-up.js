@@ -17,6 +17,7 @@ export class Signup extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    //saving variables entered into local variables
     const { fname, lname, email, password } = this.state;
     console.log(fname, lname, email, password);
 
@@ -61,6 +62,7 @@ export class Signup extends Component {
           <input type="text" 
           className="form-control" 
           placeholder="     First name" 
+          //stores the input to variable
           onChange={(e)=>this.setState({fname:e.target.value})}/>
         </div>
 

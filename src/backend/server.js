@@ -16,7 +16,7 @@ const JWT_SECRET = "asdhabsdkasbdaksbd1235245h34b1j2hb312h3b14235hb0sdf90)JF)9dj
 port = 5000;
 
 //database link
-const mongoUrl = "mongodb+srv://admin:admin@cluster0.jykmr2t.mongodb.net/?retryWrites=true&w=majority"
+const mongoUrl = "mongodb+srv://admin:admin@cluster0.jykmr2t.mongodb.net/?retryWrites=true&w=majority";
 
 //connect to database
 mongoose
